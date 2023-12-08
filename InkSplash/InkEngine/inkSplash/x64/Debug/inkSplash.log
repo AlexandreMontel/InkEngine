@@ -1,0 +1,33 @@
+﻿  Manifestant.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+  Crowd.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\inkSplash\Crowd.cpp(80,33): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\inkSplash\Crowd.cpp(80,31): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\Application.h(69,1): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\inkSplash\Crowd.cpp(74): message : voir la référence à l'instanciation de la fonction modèle 'T *InkEngine::Application::CreateComponentAndAttachToEntity<InkEngine::BoxCollider>(InkEngine::Entity *)' en cours de compilation
+          with
+          [
+              T=InkEngine::BoxCollider
+          ]
+  GameManager.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\Application.h(69,1): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\inkSplash\GameManager.cpp(27): message : voir la référence à l'instanciation de la fonction modèle 'T *InkEngine::Application::CreateComponentAndAttachToEntity<InkEngine::BoxCollider>(InkEngine::Entity *)' en cours de compilation
+          with
+          [
+              T=InkEngine::BoxCollider
+          ]
+  inkSplash.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\inkSplash\inkSplash.cpp(14,17): warning C4091: '' : ignoré à gauche de 'InkEngine::Crowd' quand aucune variable n'est déclarée
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\inkSplash\inkSplash.cpp(15,23): warning C4091: '' : ignoré à gauche de 'InkEngine::GameManager' quand aucune variable n'est déclarée
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\inkSplash\inkSplash.cpp(33,24): warning C4101: 'Man' : variable locale non référencée
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\Application.h(69,1): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\inkSplash\inkSplash.cpp(22): message : voir la référence à l'instanciation de la fonction modèle 'T *InkEngine::Application::CreateComponentAndAttachToEntity<InkEngine::BoxCollider>(InkEngine::Entity *)' en cours de compilation
+          with
+          [
+              T=InkEngine::BoxCollider
+          ]
+  Génération de code en cours...
+  inkSplash.vcxproj -> C:\Alexandre Montel\Jeux\InkSplash\InkEngine\x64\Debug\inkSplash.exe

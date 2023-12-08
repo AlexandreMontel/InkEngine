@@ -1,0 +1,58 @@
+﻿  AComponent.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+  Application.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\Application.cpp(83,36): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\Application.cpp(103,20): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\Application.cpp(150,32): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=unsigned int
+          ]
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\Application.cpp(150,25): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              T=unsigned int
+          ]
+  BoxCollider.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+  CamComponent.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+  CollisionListener.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+  ComponentCreator.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\ComponentCreator.cpp(23,19): warning C4244: 'argument' : conversion de 'float' en 'int', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\Application.h(69,1): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\ComponentCreator.cpp(19): message : voir la référence à l'instanciation de la fonction modèle 'T *InkEngine::Application::CreateComponentAndAttachToEntity<InkEngine::RigidBody>(InkEngine::Entity *)' en cours de compilation
+          with
+          [
+              T=InkEngine::RigidBody
+          ]
+  MovementInput.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\MovementInput.cpp(16,37): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=int
+          ]
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\MovementInput.cpp(16,27): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
+          with
+          [
+              T=int
+          ]
+  Physics.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+  RigidBody.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Alexandre Montel\Jeux\InkSplash\InkEngine\InkEngine\RigidBody.cpp(99,25): warning C4244: '=' : conversion de 'int' en 'float', perte possible de données
+  Génération de code en cours...
+  InkEngine.vcxproj -> C:\Alexandre Montel\Jeux\InkSplash\InkEngine\x64\Debug\InkEngine.lib
