@@ -21,6 +21,13 @@ void InkEngine::ComponentCreator::CreateRigidbody(Entity* ent, b2BodyType bodyTy
 		rBC->SetBodyType(bodyType);
 
 		rBC->setGravity(gravityScale);
+
+		//app->gamePhysics->Awake();
+
+		if (app->isAwake)
+		{
+			rBC->Awake();
+		}
 }
 
 void InkEngine::ComponentCreator::CreateSpriteRenderer(Entity* ent, std::string spriteName, InkEngine::SpriteRenderer::OriginPosition posOrigin )
@@ -29,6 +36,10 @@ void InkEngine::ComponentCreator::CreateSpriteRenderer(Entity* ent, std::string 
 
 	sRC->SetSprite(spriteName);
 	sRC->CenterOrigin(posOrigin);
+	if (app->isAwake)
+	{
+		sRC->Awake();
+	}
 }
 
 void InkEngine::ComponentCreator::CreateCameraComponent(Entity* ent, InkEngine::CamComponent::CameraType camType, Entity* enToFollo)
@@ -40,6 +51,10 @@ void InkEngine::ComponentCreator::CreateCameraComponent(Entity* ent, InkEngine::
 	{
 		CamC->SetObjectToFollow(enToFollo);
 	}
+	if (app->isAwake)
+	{
+		CamC->Awake();
+	}
 }
 
 void InkEngine::ComponentCreator::CreateBoxCollider(Entity* ent)
@@ -48,7 +63,10 @@ void InkEngine::ComponentCreator::CreateBoxCollider(Entity* ent)
 
 	BoxColl = nullptr;
 
-
+	if (app->isAwake)
+	{
+		BoxColl->Awake();
+	}
 
 }
 

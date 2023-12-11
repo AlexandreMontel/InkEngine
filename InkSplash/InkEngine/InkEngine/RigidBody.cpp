@@ -9,9 +9,9 @@ InkEngine::RigidBody::RigidBody()
 	
 }
 void InkEngine::RigidBody::Awake()
-{/*
+{
 	app = InkEngine::Application::GetInstance();	
-	Ent = app->GetMyEntity(this);*/
+	Ent = app->GetMyEntity(this);
 
 	Body = app->gamePhysics->world->CreateBody(&bodyDef);
 	SetBodyPos();

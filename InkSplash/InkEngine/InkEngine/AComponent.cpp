@@ -4,8 +4,8 @@
 
 InkEngine::AComponent::AComponent() {
 	
-	app = InkEngine::Application::GetInstance();
-	MyEnt = app->GetMyEntity(this);
+	/*app = InkEngine::Application::GetInstance();
+	MyEnt = app->GetMyEntity(this);*/
 }
 
 void InkEngine::AComponent::Awake()

@@ -13,7 +13,10 @@ namespace InkEngine {
 	protected:
 		Application* app;
 		Entity* entity;
+		Entity* crowd;
+		
 		bool followManif = false;
+		bool mustSpawnManifestant = false;
 
 	public:
 		

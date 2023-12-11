@@ -31,8 +31,10 @@ void InkEngine::Application::Loop()
 
     for (Entity* ent : _Entities)
     {
-        ent->Awake();        
+        ent->Awake();            
     }
+    isAwake = true;
+
     for (AComponent* comp : _Component)
     {
         InkEngine::CamComponent* CamComponent = dynamic_cast <InkEngine::CamComponent*>(comp);
@@ -57,11 +59,12 @@ void InkEngine::Application::Loop()
         
         sf::Time elapsed = clock.restart();
        
-        for (Entity* Entity : _Entities) //Update des Entities
-        {      
-            Entity->Update(elapsed.asSeconds());
-        }        
+       
+        for (size_t i = 0; i < _Entities.size(); i++)
+        {
+            _Entities[i]->Update(elapsed.asSeconds());
         
+        }
         gamePhysics->Update(elapsed.asSeconds());
           
 

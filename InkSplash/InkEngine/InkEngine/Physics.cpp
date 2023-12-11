@@ -5,14 +5,14 @@
 
 InkEngine::Physics::Physics()
 {
-    world->SetContactListener(&CollListen);
+    //world->SetContactListener(&CollListen);
 }
 
 void InkEngine::Physics::Awake()
 {
-    //app = InkEngine::Application::GetInstance();
-    //world->SetContactListener(&CollListen);
-
+    app = InkEngine::Application::GetInstance();
+    
+    world->SetContactListener(&CollListen);
 }
 
 

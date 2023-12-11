@@ -3,19 +3,20 @@
 #include "InkEngine/Application.h"
 #include "InkEngine/BoxCollider.h"
 #include "InkEngine/Manifestant.h"
-//#include <inkSplash/>
+#include "inkSplash.h"
 #include "Crowd.h"
 
 InkEngine::Crowd::Crowd() {
 
-	jlm = app->GetGlobalEntity("Player");
+	/*jlm = app->GetGlobalEntity("Player");
 	_manifestants.push_back(jlm);
 	sf::Vector2f* newPos = new sf::Vector2f(0, 0);
-	_positions.push_back(newPos);
+	_positions.push_back(newPos);*/
 }
 
 void InkEngine::Crowd::Awake()
 {
+	
 	app = InkEngine::Application::GetInstance();
 	jlm = app->GetGlobalEntity("Player");
 	_manifestants.push_back(jlm);
@@ -27,6 +28,7 @@ void InkEngine::Crowd::Awake()
 void InkEngine::Crowd::addManifestant(Entity* ent)
 {
 	_manifestants.push_back(ent);
+	
 	sf::Vector2f* newPos = new sf::Vector2f(0, 0);
 	for (sf::Vector2f* pos : _positions) {
 		while (newPos->x == pos->x && newPos->y == pos->y) {
@@ -47,10 +49,12 @@ void InkEngine::Crowd::addManifestant(Entity* ent)
 		}
 			//std::cout << std::to_string(newPos->x) + "," + std::to_string(newPos->y) << std::endl;
 	}
+		
 		_positions.push_back(newPos);
 		man_Pos.insert(std::pair<Entity*, sf::Vector2f*>(ent, newPos));
-		NewManifestant();
+		ent->setPosition(jlm->getPosition() + *man_Pos.find(ent)->second);
 		
+		MYGAME::NewManifestant();
 }
 	
 
@@ -77,5 +81,5 @@ void  InkEngine::Crowd::NewManifestant() {
 
 	int x = app->GenerateRandomInt() % 1866 + 64;
 	int y = app->GenerateRandomInt() % 1026 + 64;
-	nextManifestant->setPosition(x,y);
+	nextManifestant->setPosition(500,500);
 }

@@ -10,6 +10,7 @@
 #include "RessourcesManager.h"
 #include "Physics.h"
 #include "ComponentCreator.h"
+#include "TextRenderer.h"
 
 namespace InkEngine {
 	class Application
@@ -21,6 +22,8 @@ namespace InkEngine {
 		std::map<std::string, int> RenderingLayer;
 
 	public:
+
+		bool isAwake = false;
 
 		ComponentCreator CompCrea;
 
@@ -55,6 +58,7 @@ namespace InkEngine {
 		sf::RenderWindow* GetWindow();	
 		void addRenderingLayer();
 		void removeLayer();
+
 	};
 
 

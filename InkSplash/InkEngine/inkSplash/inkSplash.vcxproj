@@ -156,6 +156,7 @@
     <ClInclude Include="..\InkEngine\Manifestant.h" />
     <ClInclude Include="Crowd.h" />
     <ClInclude Include="GameManager.h" />
+    <ClInclude Include="inkSplash.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

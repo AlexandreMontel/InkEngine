@@ -5,7 +5,7 @@
 
 void InkEngine::BoxCollider::Setsize(bool bySprite, float x, float y)
 {
-   // app = InkEngine::Application::GetInstance();
+    app = InkEngine::Application::GetInstance();
     size.first = x;
     size.second = y;
 

@@ -23,9 +23,9 @@ void InkEngine::Entity::Start(){
 
 void InkEngine::Entity::Update(float deltaTime){
 
-	for (InkEngine::AComponent* composant : _Components)
+	for (size_t i = 0; i < _Components.size(); i++)
 	{
-		composant->Update(deltaTime);
+		_Components[i]->Update(deltaTime);
 	}
 
 	/*if (_name == "Player")
@@ -118,7 +118,6 @@ void InkEngine::Entity::draw(sf::RenderTarget& target, sf::RenderStates states) 
 		{
 			target.draw(*drawablecomposant, states);
 		}
-
 	}
 
 }
